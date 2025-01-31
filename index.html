@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script defer type="module" src="/src/main.js"></script>
+    <!-- <script defer src="/src/background.js"></script> -->
+    <title>小翁同学</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <canvas id="background-canvas"></canvas> -->
+      <div class="navbar glass sticky">
+        <div class="navbar-start px-2">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="https://github.com/kev1nweng">GitHub</a></li>
+            <li>
+              <details>
+                <summary>社交媒体</summary>
+                <ul class="p-2">
+                  <li><a href="mailto:kw@kev1nweng.space">Email</a></li>
+                  <li><a href="https://space.bilibili.com/544365132">bilibili</a></li>
+                  <li><a href="tencent://message/?uin=3032547113&Site=&Menu=yes">QQ</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <img id="logo" src="logo.svg" alt="logo" />
+        </div>
+        <div class="navbar-end">
+          <iframe
+            id="status-indicator"
+            src="https://status.kev1nweng.space/badge?theme=light"
+            width="200"
+            height="30"
+            frameborder="0"
+            scrolling="no"
+            style="color-scheme: normal"
+          ></iframe>
+        </div>
+      </div>
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+          <img id="avatar" src="avatar.jpg" class="rounded-full shadow-2xl" />
+          <div style="max-width: 90vw">
+            <h1 class="text-5xl font-bold">Hey there 👋</h1>
+            <p class="py-6">
+              中国上海 17 岁普通高中生。ENFP。<br />
+              <b>技能栈： 物生地 / 计算机科学 / 平面设计 / 建模 / 视频剪辑 / 编曲 / 运动</b
+              ><br /><br />
+              <button class="btn btn-soft" onclick="window.open('mailto:kw@kev1nweng.space')">
+                找我聊天
+              </button>
+              <button
+                class="btn btn-soft btn-info"
+                onclick="keep_it_for_yourself_modal.showModal()"
+              >
+                投喂我一杯奶茶？
+              </button>
+              <button
+                class="btn btn-soft btn-warning"
+                onclick="window.open('https://www.bilibili.com/video/BV1GJ411x7h7')"
+              >
+                别点我
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <dialog id="keep_it_for_yourself_modal" class="modal">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">谢谢你！</h3>
+          <p class="py-4">辛苦啦，这杯奶茶留给自己吧！🧋⭐</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">关闭</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <footer
+        class="footer sm:footer-horizontal footer-center bg-neutral text-base-content rounded-t-4xl p-10"
+      >
+        <nav class="grid grid-flow-col gap-4">
+          <a class="link link-hover" href="https://status.kev1nweng.space">服务状态</a>
+          <a class="link link-hover" href="https://reel-sync.kev1nweng.space">ReelSync</a>
+          <a class="link link-hover" href="https://lex-demo.kev1nweng.space">Myphlex Demo</a>
+          <a class="link link-hover" href="https://proxy.kev1nweng.space">Maple Proxy</a>
+          <a class="link link-hover" href="https://sth-ai.kev1nweng.space">Something AI</a>
+        </nav>
+        <div class="flex flex-row justify-center items-center">
+          <img id="logo" src="logo.svg" alt="kW" />
+          <div class="text-xl font-bold ml-2">小翁同学</div>
+        </div>
+        <aside>
+          <p>&nbsp;Copyright © 2025 小翁同学；保留一切权利。</p>
+        </aside>
+      </footer>
+    </div>
+  </body>
+</html>
